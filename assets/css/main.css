@@ -147,10 +147,10 @@
 		}
 
 	a {
-		-moz-transition: color 0.2s ease, border-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-color 0.2s ease;
-		transition: color 0.2s ease, border-color 0.2s ease;
+		-moz-transition: color 0.2s ease, border-color 0.3s ease;
+		-webkit-transition: color 0.2s ease, border-color 0.3s ease;
+		-ms-transition: color 0.2s ease, border-color 0.3s ease;
+		transition: color 0.2s ease, border-color 0.3s ease;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -555,9 +555,9 @@
 						text-indent: 0;
 					}
 
-					ul.icons li a:hover {
-						border-color: #ff7496;
-					}
+                        ul.icons li a:hover {
+                            border-color: white;
+                        }
 
 			@media screen and (max-width: 480px) {
 
@@ -694,6 +694,11 @@
 
 /* Main */
 
+    h1 > a:hover {
+        color:black;
+        text: strong;
+    }
+
 	#main {
 		position: relative;
 		max-width: 100%;
@@ -703,6 +708,7 @@
 		border-radius: 4px;
 		cursor: default;
 		opacity: 0.95;
+		border-radius: .5in;
 		text-align: center;
 		-moz-transform-origin: 50% 50%;
 		-webkit-transform-origin: 50% 50%;
@@ -717,6 +723,32 @@
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
 	}
+
+	#main-body {
+    		position: relative;
+    		width 45em;
+    		max-width: 100%;
+    		min-width: 27em;
+    		padding: 4.5em 3.2em 3.2em 3.2em;
+    		background: #ffffff;
+    		border-radius: 4px;
+    		cursor: default;
+    		opacity: 0.95;
+    		border-radius: .5in;
+    		text-align: center;
+    		-moz-transform-origin: 50% 50%;
+    		-webkit-transform-origin: 50% 50%;
+    		-ms-transform-origin: 50% 50%;
+    		transform-origin: 50% 50%;
+    		-moz-transform: rotateX(0deg);
+    		-webkit-transform: rotateX(0deg);
+    		-ms-transform: rotateX(0deg);
+    		transform: rotateX(0deg);
+    		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+    		transition: opacity 1s ease, transform 1s ease;
+    	}
 
 		#main .avatar {
 			position: relative;
@@ -760,10 +792,10 @@
 
 		body.is-loading #main {
 			opacity: 0;
-			-moz-transform: rotateX(15deg);
-			-webkit-transform: rotateX(15deg);
-			-ms-transform: rotateX(15deg);
-			transform: rotateX(15deg);
+			-moz-transform: rotateX(100deg);
+			-webkit-transform: rotateX(100deg);
+			-ms-transform: rotateX(100deg);
+			transform: rotateX(100deg);
 		}
 
 /* Footer */
